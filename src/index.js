@@ -4,6 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Atomize
+import { ThemeProvider, StyleReset } from 'atomize';
+
+export default function Main() {
+  return (
+    <>
+      <StyleReset />
+      <App />
+    </>
+  );
+}
+
+const theme = {
+  colors: {
+    primary: 'tomato',
+    accent: 'yellow',
+  },
+};
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
